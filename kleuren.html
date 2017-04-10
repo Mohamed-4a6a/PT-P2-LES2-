@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+     <meta http-equiv="content-type"
+		   content="text/html;
+					charset=UTF-8">
+		<link rel="stylesheet" href="kleuren.css">
+		<title>Mohamed Hohoud</title>
+    </head> 
+   <body>
+		<h3> vierkant</h3>
+		Breedte: <input id="Breedte"/><br/><br/>
+		Hoogte: <input id="Hoogte"/><br/><br/>
+		<select id="kleur">
+	   		<option value="red">rood</option>
+	   		<option value="aqua">blauw</option>
+	   		<option value="deepskyblue">diep blauw</option>
+	   		<option value="green">groen</option>
+	   	</select>
+		<button onclick="toon();">Toon</button>
+	   <div id="blokje">
+		   dddddddd
+	   </div>
+  <script>
+		  function toon(){
+                var breedte = document.getElementById("Breedte").value;
+                var hoogte = document.getElementById("Hoogte").value;
+                var kleur = document.getElementById("kleur").value;
+                 document.getElementById("blokje").style.width = breedte + "px";
+                document.getElementById("blokje").style.height = hoogte + "px";
+                document.getElementById("blokje").style.backgroundColor = kleur;
+            }
+		</script>
+   </body>
+</html>

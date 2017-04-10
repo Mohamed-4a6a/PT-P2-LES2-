@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+     <meta http-equiv="content-type"
+		   content="text/html;
+					charset=UTF-8">
+		<link rel="stylesheet" href="totaalbedraag.css">
+		<title>totaalbedrag - Mohamed Hohoud</title>
+    </head> 
+   <body>
+		<h3> totaalbedrag</h3>
+	   <div id="blok">
+	   Bedrag per stuk: <input id="totaalbedrag"/><br/><br/>
+       Aantal: <input id="aantal"/><br/><br/>
+       <button onclick="rekenen();">Bereken</button>
+       <div id="totaalOutput"></div>
+	   </div>
+    <script>
+        function rekenen(){
+                var bedrag = document.getElementById("totaalbedrag").value;
+                var aantal = document.getElementById("aantal").value;
+                document.getElementById("totaalOutput").innerHTML = "Het totaalbedrag is: " + (bedrag * aantal).toFixed(2);
+            }
+    </script>
+   </body>
+</html>
